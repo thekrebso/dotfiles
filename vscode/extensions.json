@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "enkeldigital.relative-goto",
+        "cardinal90.multi-cursor-case-preserve",
+        "usernamehw.errorlens",
+        "selbh.move-fast",
+        "mhutchie.git-graph",
+        "redhat.vscode-yaml",
+        "llvm-vs-code-extensions.vscode-clangd",
+        "pkief.material-icon-theme",
+        "ms-vscode.cpptools",
+        "twxs.cmake",
+    ]
+}

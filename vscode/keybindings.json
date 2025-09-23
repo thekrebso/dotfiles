@@ -1,0 +1,18 @@
+[
+    {
+        "key": "alt+oem_4",
+        "command": "go-go-my-cursor.gotoleftbracketouter"
+    },
+    {
+        "key": "alt+oem_6",
+        "command": "go-go-my-cursor.gotorightbracketouter"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "relative-goto.goto"
+    },
+    {
+        "key": "alt+g",
+        "command": "-relative-goto.goto"
+    }
+]

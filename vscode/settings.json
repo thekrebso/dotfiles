@@ -1,0 +1,113 @@
+{
+  //
+  // C/C++
+  //
+  "clangd.path": "clangd",
+  "clangd.onConfigChanged": "restart",
+  "clangd.detectExtensionConflicts": true,
+  "clangd.arguments": [
+    "--log=verbose",
+    "--pretty",
+    "--background-index",
+    "--clang-tidy",
+    "--header-insertion=iwyu",
+    "--compile-commands-dir=${workspaceFolder}/build/",
+    "--enable-config",
+    "--query-driver=/usr/bin/gcc,/usr/bin/g++"
+  ],
+  "C_Cpp.intelliSenseEngine": "disabled",
+  //
+  // Global
+  //
+  "workbench.remoteIndicator.showExtensionRecommendations": true,
+  "debug.inlineValues": "on",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.detectIndentation": true,
+  "editor.accessibilitySupport": "off",
+  "editor.selectionClipboard": false,
+  "editor.unicodeHighlight.nonBasicASCII": true,
+  "explorer.copyRelativePathSeparator": "/",
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editor.revealIfOpen": true,
+  "workbench.startupEditor": "none",
+  "workbench.editor.enablePreview": false,
+  "scm.alwaysShowRepositories": true,
+  "scm.alwaysShowActions": true,
+  "git.autofetch": true,
+  "git.enableSmartCommit": false,
+  "git.suggestSmartCommit": false,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.autoSave": "afterDelay",
+  "files.associations": {
+    "*.map": "mapfile",
+    "*.cmd": "linkerscript",
+    ".clang-format": "yaml",
+    ".clang-tidy": "yaml",
+    ".clangd": "yaml"
+  },
+  //
+  // Visual
+  //
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.preferredHighContrastColorTheme": "Default Dark Modern",
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.fontFamily": "'JetbrainsMono NF Regular', 'JetbrainsMono Nerd Font Mono', 'Jetbrains Mono', monospace",
+  "terminal.integrated.customGlyphs": true,
+  "breadcrumbs.enabled": false,
+  "editor.fontFamily": "'JetbrainsMono NF Regular', 'JetbrainsMono Nerd Font Mono', 'Jetbrains Mono', monospace",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.7,
+  "editor.letterSpacing": 0.45,
+  "editor.lineNumbers": "relative",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "editor.matchBrackets": "near",
+  "editor.bracketPairColorization.enabled": false,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.renderWhitespace": "all",
+  "editor.overviewRulerBorder": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.tabSize": 4,
+  "editor.cursorStyle": "block",
+  "workbench.editor.showIcons": false,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.activityBar.location": "top",
+  "workbench.editor.empty.hint": "hidden",
+  "window.title": "${separator}${profileName}${separator}${rootName}${separator}",
+  "window.titleSeparator": " - ",
+  "window.commandCenter": true,
+  "zenMode.centerLayout": true,
+  "zenMode.hideLineNumbers": false,
+  "editor.tokenColorCustomizations": {
+    "[Default Dark Modern]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "keyword.control",
+            "source.cpp keyword.operator.new",
+            "keyword.operator.delete",
+            "keyword.other.using",
+            "keyword.other.operator",
+            "entity.name.operator",
+            "support.class.component.js",
+            "support.class.component.jsx",
+            "support.class.component.ts",
+            "support.class.component.tsx"
+          ],
+          "settings": {
+            "foreground": "#499cd5",
+            "fontStyle": ""
+          }
+        }
+      ]
+    }
+  },
+  //
+  // Sticky Scroll
+  //
+  "editor.stickyScroll.enabled": false,
+  "terminal.integrated.stickyScroll.enabled": false,
+  "workbench.tree.enableStickyScroll": false
+}
