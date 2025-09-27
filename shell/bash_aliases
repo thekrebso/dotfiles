@@ -1,0 +1,8 @@
+alias cd..="cd .."
+alias sl="ls"
+
+alias m="micro"
+
+alias ls-date="ls -lhtr"
+
+alias git-graph='git log --oneline --graph --all --decorate --parents'

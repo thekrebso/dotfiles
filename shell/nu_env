@@ -1,0 +1,2 @@
+$env.config.buffer_editor = "micro"
+$env.config.show_banner = false

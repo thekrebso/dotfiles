@@ -1,0 +1,46 @@
+#!/bin/bash
+
+fixperms() {
+  if [ -z "$1" ]; then
+    echo "Usage: fixperms <file|directory>"
+    return 1
+  fi
+
+  TARGET="$1"
+
+  if [ -f "$TARGET" ]; then
+    echo "Setting file permission to 644 for '$TARGET'"
+    chmod 644 "$TARGET"
+
+  elif [ -d "$TARGET" ]; then
+    echo "Recursively setting permissions in directory '$TARGET'..."
+
+    echo " - Setting directory permissions to 755"
+    find "$TARGET" -type d -exec chmod 755 {} +
+
+    echo " - Setting file permissions to 644"
+    find "$TARGET" -type f -exec chmod 644 {} +
+
+  else
+    echo "Error: '$TARGET' is not a file or directory"
+    return 1
+  fi
+}
+
+count_files_in_dir() {
+    local path="$1"
+    ls -alf "$path" | wc -l
+}
+
+count_files_in_subdirs() {
+    local path="$1"
+    # Check if the path exists and is a directory
+    if [ ! -d "$path" ]; then
+        echo "Error: '$path' is not a valid directory"
+        return 1
+    fi
+    # Loop through subdirectories
+    for dir in "$path"/*/ ; do
+        [ -d "$dir" ] && echo "${dir%/}: $(ls -alf "$dir" | wc -l)"
+    done
+}

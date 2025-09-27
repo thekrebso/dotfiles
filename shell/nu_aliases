@@ -1,0 +1,10 @@
+alias ll = ls -l
+alias la = ls -al
+
+alias cd.. = cd ..
+alias sl = ls
+
+alias cat = open
+
+alias m = micro
+alias o = open
