@@ -1,0 +1,35 @@
+{
+    "Alt-/": "lua:comment.comment",
+    "CtrlUnderscore": "lua:comment.comment",
+	"Ctrl-]": "IndentSelection|IndentLine",
+	"Ctrl-[": "OutdentSelection|OutdentLine",
+	"Alt-]": "IndentSelection|IndentLine",
+	"Alt-[": "OutdentSelection|OutdentLine",
+
+    "\u001b[115;6u": "SaveAs",
+
+    "Alt-z": "lua:initlua.toggleSoftwrap",
+    "Ctrl-w": "Quit",
+    "CtrlPageDown": "NextTab",
+	"CtrlPageUp": "PreviousTab",
+    "CtrlSpace": "Autocomplete",
+
+    "CtrlBackspace": "DeleteWordLeft",
+    "OldBackspace": "DeleteWordLeft",
+    "CtrlDelete": "DeleteWordRight",
+    "CtrlShiftAltDown": "DuplicateLine",
+
+
+	// editor.action.addSelectionToNextFindMatch
+	"Ctrl-d": "SpawnMultiCursor",
+	// cursorUndo
+	"Ctrl-u": "RemoveMultiCursor",
+	// editor.action.moveSelectionToNextFindMatch
+	"<Ctrl-k><Ctrl-d>": "SkipMultiCursor",
+	// cancelSelection
+	"ShiftEscape": "RemoveAllMultiCursors",
+	// editor.action.insertCursorBelow
+	"CtrlShiftDown": "SpawnMultiCursorDown",
+	// editor.action.insertCursorAgove
+	"CtrlShiftUp": "SpawnMultiCursorUp",
+}

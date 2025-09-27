@@ -1,0 +1,8 @@
+{
+    "clipboard": "terminal",
+    "colorscheme": "vscode",
+    "mkparents": true,
+    "softwrap": true,
+    "tabstospaces": true,
+    "wordwrap": true
+}
