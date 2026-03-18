@@ -27,6 +27,7 @@
   "editor.accessibilitySupport": "off",
   "editor.selectionClipboard": false,
   "editor.unicodeHighlight.nonBasicASCII": true,
+  "editor.copyWithSyntaxHighlighting": false,
   "explorer.copyRelativePathSeparator": "/",
   "explorer.confirmDragAndDrop": false,
   "workbench.editor.revealIfOpen": true,
@@ -39,6 +40,7 @@
   "git.suggestSmartCommit": false,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
   "files.autoSave": "afterDelay",
   "files.associations": {
     "*.map": "mapfile",
