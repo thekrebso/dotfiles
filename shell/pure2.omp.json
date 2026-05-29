@@ -31,7 +31,9 @@
                 {
                     "foreground": "#81A1C1",
                     "properties": {
-                        "style": "full"
+                        "style": "fish",
+                        "dir_length": 1,
+                        "full_length_dirs": 2
                     },
                     "style": "plain",
                     "template": "{{ .Path }} ",
@@ -46,16 +48,13 @@
                 {
                     "foreground": "#6C6C6C",
                     "properties": {
-                        "branch_ahead_icon": "<#88C0D0>\u21e1 </>",
-                        "branch_behind_icon": "<#88C0D0>\u21e3 </>",
                         "branch_icon": "",
                         "fetch_stash_count": true,
                         "fetch_status": true,
-                        "fetch_upstream_icon": true,
                         "github_icon": ""
                     },
                     "style": "plain",
-                    "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}<#FFAFD7>*</>{{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+                    "template": "on {{ .HEAD }}{{ if gt .Ahead 0 }} | ahead {{ .Ahead }}{{ end }}{{ if gt .Behind 0 }} | behind {{ .Behind }}{{ end }}{{ if .Working.Changed }} | working tree {{ .Working.String }}{{ else }} | working tree clean{{ end }}{{ if .Staging.Changed }} | staged {{ .Staging.String }}{{ else }} | staged none{{ end }}{{ if gt .StashCount 0 }} | stashes {{ .StashCount }}{{ end }} ",
                     "type": "git"
                 }
             ],
