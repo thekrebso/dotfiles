@@ -69,7 +69,7 @@
                         "style": "austin"
                     },
                     "style": "plain",
-                    "template": " {{ .FormattedMs }} ",
+                    "template": "{{ .FormattedMs }} ",
                     "type": "executiontime"
                 }
             ],
